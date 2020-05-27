@@ -1,6 +1,5 @@
 from random import *
 
-print("plantar, pedir")
 while True:
     def genera_mazo():
         return [(numero,tipo) for numero in ['A','K','Q','J']+[x for x in range(2,11)] for tipo in ('corazones','picas','treboles','diamantes')]
@@ -32,11 +31,11 @@ while True:
     def juega():
         return llena_jugador1(genera_mazo())
 
-    print(suma(juega()))
+    print(suma(juega().copy()))
 
-    if input()=="plantar":
+    if input("¿Pedir carta? y/n \n").capitalize()=="Y":
+        print("Pidiendo nueva carta")
         break
-    elif input()=="pedir":
-        pass
-
+    else:
+        break
 
