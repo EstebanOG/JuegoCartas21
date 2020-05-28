@@ -50,7 +50,7 @@ def jugar(mazo, jugador, repartidor):
                 print("Juego:")
                 print (jugador, repartidor)
                 if valor_mano_recargado(jugador)==valor_mano_recargado(repartidor):
-                    print("Juego empatado")
+                    print("Juego empatado. Gana el repartidor")
                 elif valor_mano_recargado(jugador)>valor_mano_recargado(repartidor):
                     print("Gana el jugador")
                 else:
