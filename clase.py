@@ -43,7 +43,7 @@ def jugar(mazo, jugador, repartidor):
         jugar(mazo[2:], jugador+[mazo[0]], repartidor+[mazo[1]])
     else: 
         print (jugador, "[Carta oculta," , repartidor[1],"]")
-        if len(mazo) > 2 and valor_mano_recargado(jugador) < 21:
+        if len(mazo) > 2 and valor_mano_recargado(jugador) <= 21:
             if input("Pedir carta(s/n): ").capitalize() == "S":
                 jugar(mazo[2:], jugador+[mazo[0]], repartidor)
             else:
