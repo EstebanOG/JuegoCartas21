@@ -56,6 +56,8 @@ def jugar(mazo, jugador, repartidor):
                 else:
                     print("Gana el repartidor")
         else:
+            print("Juego:")
+            print (jugador, repartidor)
             print("Gana el repartidor")
 
 #print(mezclar(baraja()))
