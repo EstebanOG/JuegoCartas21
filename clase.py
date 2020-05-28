@@ -39,12 +39,18 @@ def valor_mano_recargado(mano):
 
 def jugar(mazo, jugador, repartidor):
     print (jugador, repartidor)
-    if len(mazo) > 2 and valor_mano_recargado(jugador) < 21 and valor_mano_recargado(repartidor) <21:
+    if len(mazo) > 48:
         jugar(mazo[2:], jugador+[mazo[0]], repartidor+[mazo[1]])
+    else: 
+        if len(mazo) > 2 and valor_mano_recargado(jugador) < 21:
+            if input("Pedir carta(s/n): ").capitalize() == "S":
+                jugar(mazo[2:], jugador+[mazo[0]], repartidor)
+            else:
+                print("Evaluar quién gana")
+        else:
+            print("Game over :v")
 
 #print(mezclar(baraja()))
 #sacar_carta(mezclar(baraja()))
-
 #print(valor_mano_recargado(mezclar(baraja())[:2]))
-
 jugar(mezclar(baraja()), [], [])
