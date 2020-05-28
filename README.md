@@ -1,34 +1,18 @@
 # JuegoCartas21
 # Ejercicio 3: 21
-### Juego cartas en haskell
+### Juego cartas en python
 ##### Modelos de programación II - G.020-82
 
 Juego de cartas con programación funcional
 
 #### Descripción
 
-Descripción
+Juego de 21 desarrollado en python en programación funcional
 
 #### Ejecutar proyecto
 ```
-Codigo
+python3 21.py
 ```
-#### Estructura del proyecto
-+ Diagrama/
-    + Diagrama-Cronometro-python.jpeg
-    + Diagrama-Cronometro-python.pdf
-+ main.py
-+ gui.py
-+ cronometro.py
-+ crea_unidades.py
-+ unidad_tiempo.py
-
-
-#### Diagrama clases
-<img src="https://raw.githubusercontent.com/FelipeH22/Cronometro/master/Diagrama/Diagrama-Cronometro-python.jpeg " alt="drawing" width="300"/>
-
-> Diagrama planteado para el desarrollo 
-
 
 #### Equipo de trabajo
 
